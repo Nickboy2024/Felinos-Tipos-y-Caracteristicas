@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felinos: Tipos y Características</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffb20c;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(221, 8, 8);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Barra de navegación superior */
+        .nav {
+            background-color: #444;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+        }
+
+        .nav a.active {
+            background-color: #007bff;
+        }
+
+        /* Contenedor principal de información */
+        .main-info {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-info h2 {
+            color: #333;
+        }
+
+        /* Secciones de contenido */
+        .section {
+            display: none;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos adicionales */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Felinos del Mundo: Tipos, Hábitat y Características</h1>
+    </header>
+
+    <!-- Barra de navegación con los tipos de felinos -->
+    <div class="nav">
+        <a href="javascript:void(0);" class="active" onclick="showSection('empresa')">La Empresa</a>
+        <a href="javascript:void(0);" onclick="showSection('puma')">Puma</a>
+        <a href="javascript:void(0);" onclick="showSection('leon')">León</a>
+        <a href="javascript:void(0);" onclick="showSection('jaguar')">Jaguar</a>
+        <a href="javascript:void(0);" onclick="showSection('guepardo')">Guepardo</a>
+        <a href="javascript:void(0);" onclick="showSection('leopardo')">Leopardo</a>
+        <a href="javascript:void(0);" onclick="showSection('leopardo-nieves')">Leopardo de las Nieves</a>
+        <a href="javascript:void(0);" onclick="showSection('gato-montes')">Gato Montés</a>
+        <a href="javascript:void(0);" onclick="showSection('gato-domestico')">Gato Doméstico</a>
+        <a href="javascript:void(0);" onclick="showSection('tigre')">Tigre</a>
+        <a href="javascript:void(0);" onclick="showSection('tigre-blanco')">Tigre Blanco</a>
+        <a href="javascript:void(0);" onclick="showSection('tigre-sumatra')">Tigre Sumatran</a>
+        <a href="javascript:void(0);" onclick="showSection('tigre-amur')">Tigre de Amur</a>
+        <a href="javascript:void(0);" onclick="showSection('tigre-sur-china')">Tigre del Sur de China</a>
+    </div>
+
+    <!-- Información sobre la empresa -->
+    <section class="section empresa active" id="empresa">
+        <div class="main-info">
+            <h2>¿Quiénes somos?</h2>
+            <img src="img/logotigre.JPG" alt="empresa">
+            <p>Somos una empresa dedicada a la conservación y estudio de los felinos salvajes. Nuestra misión es proteger a estas majestuosas criaturas y promover la educación sobre su importancia en el ecosistema.</p>
+            <p>Nos especializamos en la investigación, conservación y difusión de información sobre felinos a nivel mundial.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Puma -->
+    <section class="section puma" id="puma">
+        <div class="main-info">
+            <h2>Puma (Puma concolor)</h2>
+            <img src="img/puma.jpg" alt="Puma">
+            <p><strong>Hábitat:</strong> Los pumas tienen una amplia distribución en América, desde Canadá hasta Argentina. Prefieren áreas montañosas y boscosas.</p>
+            <p><strong>Alimentación:</strong> Son carnívoros, cazando animales medianos a grandes como ciervos, alces y jabalíes.</p>
+            <p><strong>Comportamiento:</strong> Son solitarios y muy adaptables, con una increíble capacidad para vivir en diversos entornos, desde bosques hasta desiertos.</p>
+            <p><strong>Conservación:</strong> Aunque no están considerados en peligro de extinción, algunas subpoblaciones están en declive debido a la pérdida de hábitat y caza furtiva.</p>
+            <p><strong>Características:</strong> El puma es conocido por su habilidad para saltar largas distancias, su pelaje suave y su aguda visión nocturna.</p>
+            <p><strong>Datos curiosos:</strong> Los pumas tienen la capacidad de adaptarse a diversos climas, desde regiones nevadas hasta climas cálidos y secos.</p>
+        </div>
+    </section>
+
+    <!-- Sección del León -->
+    <section class="section leon" id="leon">
+        <div class="main-info">
+            <h2>León (Panthera leo)</h2>
+            <img src="img/leon.jpg" alt="León">
+            <p><strong>Hábitat:</strong> Los leones habitan en las sabanas y bosques de África, con una pequeña población en el noroeste de la India (león asiático).</p>
+            <p><strong>Alimentación:</strong> Son carnívoros, cazando en grupos presas grandes como cebras, antílopes y búfalos.</p>
+            <p><strong>Comportamiento:</strong> A diferencia de otros felinos, los leones son sociales y viven en manadas, con una jerarquía clara.</p>
+            <p><strong>Conservación:</strong> Los leones están en peligro debido a la pérdida de hábitat y la disminución de presas. La caza furtiva y la caza de trofeos también contribuyen a su declive.</p>
+            <p><strong>Características:</strong> Los leones son conocidos por su melena, que los distingue de otros felinos, especialmente los machos. Son los únicos felinos que viven en grupos sociales llamados manadas.</p>
+            <p><strong>Datos curiosos:</strong> Los leones pueden llegar a vivir entre 10 y 14 años en estado salvaje, y los machos suelen tener una vida más corta debido a los peligros de su entorno.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Jaguar -->
+    <section class="section jaguar" id="jaguar">
+        <div class="main-info">
+            <h2>Jaguar (Panthera onca)</h2>
+            <img src="img/jaguar.jpg" alt="Jaguar">
+            <p><strong>Hábitat:</strong> Se encuentra en América Central y del Sur, habitando selvas tropicales y bosques húmedos.</p>
+            <p><strong>Alimentación:</strong> Son conocidos por su gran fuerza, que les permite cazar animales como caimanes, venados y hasta grandes felinos como pumas.</p>
+            <p><strong>Comportamiento:</strong> Son solitarios y muy territoriales, con un estilo de caza único que involucra emboscar a sus presas.</p>
+            <p><strong>Conservación:</strong> Están en peligro de extinción debido a la deforestación y la caza ilegal. La pérdida de su hábitat es una gran amenaza para la especie.</p>
+            <p><strong>Características:</strong> Los jaguares tienen el mordisco más fuerte de todos los felinos, capaz de romper el cráneo de su presa con facilidad.</p>
+            <p><strong>Datos curiosos:</strong> Son excelentes nadadores y, a diferencia de otros felinos, disfrutan pasar tiempo en el agua, cazando peces y reptiles.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Guepardo -->
+    <section class="section guepardo" id="guepardo">
+        <div class="main-info">
+            <h2>Guepardo (Acinonyx jubatus)</h2>
+            <img src="img/guepardo.jpeg" alt="Guepardo">
+            <p><strong>Hábitat:</strong> El guepardo se encuentra principalmente en las sabanas africanas y algunas zonas de Irán.</p>
+            <p><strong>Alimentación:</strong> Se alimenta principalmente de antílopes, gacelas y otros animales de pastoreo pequeños.</p>
+            <p><strong>Comportamiento:</strong> Son conocidos por su velocidad impresionante, alcanzando hasta 100 km/h en carreras cortas.</p>
+            <p><strong>Conservación:</strong> El guepardo está en peligro debido a la pérdida de hábitat y la competencia con otros grandes depredadores.</p>
+            <p><strong>Características:</strong> Los guepardos son los felinos más rápidos, y sus cuerpos esbeltos están diseñados para alcanzar velocidades increíbles.</p>
+            <p><strong>Datos curiosos:</strong> Aunque son los felinos más rápidos, no pueden mantener su velocidad por mucho tiempo. Utilizan su velocidad para atrapar presas a corta distancia.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Leopardo -->
+    <section class="section leopardo" id="leopardo">
+        <div class="main-info">
+            <h2>Leopardo (Panthera pardus)</h2>
+            <img src="img/leopardo.jpeg" alt="Leopardo">
+            <p><strong>Hábitat:</strong> Los leopardos viven en una amplia variedad de hábitats, incluidos bosques tropicales, sabanas y áreas montañosas de África y Asia.</p>
+            <p><strong>Alimentación:</strong> Son carnívoros que cazan presas de tamaño mediano, como antílopes y monos, y tienen la habilidad de arrastrar sus presas a los árboles para evitar que otros depredadores las roben.</p>
+            <p><strong>Comportamiento:</strong> Son felinos solitarios y muy sigilosos, con una excelente capacidad para trepar árboles, lo que les permite cazar y refugiarse en zonas elevadas.</p>
+            <p><strong>Conservación:</strong> Los leopardos están clasificados como vulnerables debido a la caza furtiva, la pérdida de hábitat y la competencia con otros grandes depredadores.</p>
+            <p><strong>Características:</strong> Tienen un pelaje distintivo con manchas negras, lo que les permite camuflarse perfectamente en su entorno.</p>
+            <p><strong>Datos curiosos:</strong> Los leopardos tienen una capacidad asombrosa para adaptarse a diversos hábitats y condiciones, desde las selvas tropicales hasta las sabanas abiertas.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Leopardo de las Nieves -->
+    <section class="section leopardo-nieves" id="leopardo-nieves">
+        <div class="main-info">
+            <h2>Leopardo de las Nieves (Panthera uncia)</h2>
+            <img src="img/leopardo-nieves.jpg" alt="Leopardo de las Nieves">
+            <p><strong>Hábitat:</strong> Vive en las regiones montañosas de Asia Central, a grandes altitudes. Son especialmente adaptados al frío.</p>
+            <p><strong>Alimentación:</strong> Cazan animales como cabras montesas, ovejas y aves de montaña, adaptándose a la escasez de presas en su entorno.</p>
+            <p><strong>Comportamiento:</strong> Son solitarios y muy territoriales, con una excelente capacidad para camuflarse en la nieve y las rocas.</p>
+            <p><strong>Conservación:</strong> Están en peligro de extinción debido a la caza ilegal y la disminución de su hábitat natural.</p>
+            <p><strong>Características:</strong> Su pelaje espeso y moteado les permite mezclarse perfectamente con las montañas nevadas.</p>
+            <p><strong>Datos curiosos:</strong> Los leopardos de las nieves tienen una cola larga y densa, que les ayuda a mantener el equilibrio mientras navegan por terrenos rocosos y montañosos.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Gato Montés -->
+    <section class="section gato-montes" id="gato-montes">
+        <div class="main-info">
+            <h2>Gato Montés (Felis silvestris)</h2>
+            <img src="img/Gato-montes.jpeg" alt="Gato Montés">
+            <p><strong>Hábitat:</strong> Se encuentra en Europa, África y Asia, habitando áreas forestales, matorrales y algunas zonas de montaña.</p>
+            <p><strong>Alimentación:</strong> Su dieta consiste principalmente en pequeños mamíferos, aves, reptiles y algunos insectos.</p>
+            <p><strong>Comportamiento:</strong> Es un felino solitario y nocturno, muy reservado y cauteloso, con excelentes habilidades para cazar.</p>
+            <p><strong>Conservación:</strong> El gato montés no está en peligro inmediato, pero algunas poblaciones están amenazadas por la hibridación con gatos domésticos.</p>
+            <p><strong>Características:</strong> Es más pequeño que los grandes felinos, con un pelaje gris-marrón y marcas negras.</p>
+            <p><strong>Datos curiosos:</strong> Los gatos monteses son considerados los ancestros de los gatos domésticos actuales.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Gato Doméstico -->
+    <section class="section gato-domestico" id="gato-domestico">
+        <div class="main-info">
+            <h2>Gato Doméstico (Felis catus)</h2>
+            <img src="img/gatodomestico.jpg" alt="Gato Doméstico">
+            <p><strong>Hábitat:</strong> El gato doméstico vive en los hogares de las personas, aunque también puede encontrarse en áreas urbanas y rurales.</p>
+            <p><strong>Alimentación:</strong> Se alimentan de alimentos secos o húmedos proporcionados por sus dueños, y en ocasiones, cazan pequeños roedores.</p>
+            <p><strong>Comportamiento:</strong> Son independientes y territoriales, pero también pueden ser muy cariñosos y juguetones con sus dueños.</p>
+            <p><strong>Conservación:</strong> No está en peligro, pero la sobrepoblación de gatos domésticos sin control puede generar problemas ecológicos.</p>
+            <p><strong>Características:</strong> Existen diversas razas, colores y patrones de pelaje en los gatos domésticos, que varían ampliamente.</p>
+            <p><strong>Datos curiosos:</strong> Los gatos domésticos tienen una capacidad increíble para comunicarse mediante maullidos, ronroneos y posturas corporales.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Tigre -->
+    <section class="section tigre" id="tigre">
+        <div class="main-info">
+            <h2>Tigre (Panthera tigris)</h2>
+            <img src="img/tigre.jpg" alt="Tigre">
+            <p><strong>Hábitat:</strong> El tigre habita bosques tropicales, sabanas y zonas de pastizales en Asia.</p>
+            <p><strong>Alimentación:</strong> Es carnívoro y se alimenta principalmente de ciervos, jabalíes y otros mamíferos grandes.</p>
+            <p><strong>Comportamiento:</strong> Los tigres son solitarios y muy territoriales. Son conocidos por su impresionante fuerza y habilidades de caza.</p>
+            <p><strong>Conservación:</strong> Están en peligro de extinción debido a la caza furtiva, la destrucción de su hábitat y la caza ilegal.</p>
+            <p><strong>Características:</strong> Tienen un pelaje rayado único que les ayuda a camuflarse en la jungla y áreas de pastizales.</p>
+            <p><strong>Datos curiosos:</strong> El tigre de Bengala es la subespecie más conocida, y se encuentra principalmente en la India.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Tigre Blanco -->
+    <section class="section tigre-blanco" id="tigre-blanco">
+        <div class="main-info">
+            <h2>Tigre Blanco (Panthera tigris tigris)</h2>
+            <img src="img/tigreblanco.jpg" alt="Tigre Blanco">
+            <p><strong>Hábitat:</strong> Los tigres blancos son una variante genética del tigre de Bengala y habitan principalmente en zoológicos y santuarios.</p>
+            <p><strong>Alimentación:</strong> Al igual que otros tigres, se alimentan principalmente de ciervos, jabalíes y animales grandes.</p>
+            <p><strong>Comportamiento:</strong> Son solitarios y territoriales, y suelen tener el mismo comportamiento que los tigres naranjas.</p>
+            <p><strong>Conservación:</strong> No están en peligro, pero son extremadamente raros en la naturaleza debido a su color blanco, que se debe a una mutación genética.</p>
+            <p><strong>Características:</strong> Su pelaje blanco con rayas negras les da una apariencia impresionante y única.</p>
+            <p><strong>Datos curiosos:</strong> La cría de tigre blanco se produce solo por cría selectiva, lo que los hace extremadamente raros en la naturaleza.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Tigre de Sumatra -->
+    <section class="section tigre-sumatra" id="tigre-sumatra">
+        <div class="main-info">
+            <h2>Tigre de Sumatra (Panthera tigris sumatrae)</h2>
+            <img src="img/tigresumatra.jpg" alt="Tigre de Sumatra">
+            <p><strong>Hábitat:</strong> Vive en las selvas de la isla de Sumatra en Indonesia, en un ambiente tropical y lluvioso.</p>
+            <p><strong>Alimentación:</strong> Se alimenta de animales como ciervos, jabalíes y pequeños mamíferos de la región.</p>
+            <p><strong>Comportamiento:</strong> Son tigres solitarios y territoriales, y tienen una gran habilidad para cazar en áreas densas de la selva.</p>
+            <p><strong>Conservación:</strong> El tigre de Sumatra está en peligro crítico de extinción debido a la destrucción de su hábitat y la caza furtiva.</p>
+            <p><strong>Características:</strong> Son tigres más pequeños que otras subespecies, con un pelaje más oscuro y menos rayado.</p>
+            <p><strong>Datos curiosos:</strong> Se estima que menos de 400 tigres de Sumatra quedan en libertad, lo que hace urgente su conservación.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Tigre de Amur -->
+    <section class="section tigre-amur" id="tigre-amur">
+        <div class="main-info">
+            <h2>Tigre de Amur (Panthera tigris altaica)</h2>
+            <img src="img/tigreamur.png" alt="Tigre de Amur">
+            <p><strong>Hábitat:</strong> Habita en las regiones frías y boscosas del este de Rusia y China, en un entorno de taiga.</p>
+            <p><strong>Alimentación:</strong> Su dieta incluye ciervos, alces y jabalíes, aprovechando su fuerza y sigilo para cazar.</p>
+            <p><strong>Comportamiento:</strong> Son solitarios y muy territoriales, adaptados a climas fríos gracias a su espeso pelaje.</p>
+            <p><strong>Conservación:</strong> Están en peligro debido a la caza ilegal y la destrucción de su hábitat, con solo unos 500 individuos en la naturaleza.</p>
+            <p><strong>Características:</strong> Tienen una capa de pelaje denso y grueso para soportar el frío extremo de su entorno.</p>
+            <p><strong>Datos curiosos:</strong> Es la subespecie de tigre más al norte, con un pelaje que cambia de color en invierno para adaptarse a su hábitat nevado.</p>
+        </div>
+    </section>
+
+    <!-- Sección del Tigre del Sur de China -->
+    <section class="section tigre-sur-china" id="tigre-sur-china">
+        <div class="main-info">
+            <h2>Tigre del Sur de China (Panthera tigris amoyensis)</h2>
+            <img src="img/tigre_del_Sur_de_China.jpg" alt="Tigre del Sur de China">
+            <p><strong>Hábitat:</strong> Este tigre vive en las selvas del sur de China, en áreas montañosas y boscosas.</p>
+            <p><strong>Alimentación:</strong> Su dieta consiste principalmente de ciervos, jabalíes y otros animales de la región.</p>
+            <p><strong>Comportamiento:</strong> Son tigres solitarios y territoriales, pero tienen un carácter más reservado y evitativo.</p>
+            <p><strong>Conservación:</strong> Están críticamente en peligro de extinción, con menos de 50 individuos en libertad, debido a la caza furtiva y la pérdida de hábitat.</p>
+            <p><strong>Características:</strong> Son tigres de tamaño medio, con un pelaje menos denso que el de otras subespecies debido al clima más cálido de su hábitat.</p>
+            <p><strong>Datos curiosos:</strong> El tigre del sur de China es una de las subespecies más raras, y está siendo objeto de esfuerzos internacionales para su conservación.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Felinos del Mundo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.querySelector(`.${sectionId}`).classList.add('active');
+            
+            const navLinks = document.querySelectorAll('.nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelector(`.nav a[href*="${sectionId}"]`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
